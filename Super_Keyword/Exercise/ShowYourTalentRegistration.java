@@ -1,9 +1,12 @@
 package OverridingAndSuper;
 
 class EventRegistration{
-    protected String name;
-    protected String nameOfEvent;
-    protected double registrationFee;
+    // protected String name;
+    // protected String nameOfEvent;
+    // protected double registrationFee;
+    private String name;
+    private String nameOfEvent;
+    private double registrationFee;
 
     public EventRegistration(String name, String nameOfEvent){
         this.name = name;
@@ -95,20 +98,20 @@ class TeamEventRegistration extends EventRegistration{
     }
 
     public void registerEvent(){
-        if(super.nameOfEvent == "ShakeALeg"){
-            super.registrationFee = 50;
+        if(super.getNameOfEvent() == "ShakeALeg"){
+            super.setRegistrationFee(50); 
         }
-        else if(super.nameOfEvent == "Sing&Win"){
-            super.registrationFee = 60;
+        else if(super.getNameOfEvent() == "Sing&Win"){
+            super.setRegistrationFee(60); 
         }
-        else if(super.nameOfEvent == "Actathon"){
-            super.registrationFee = 80;
+        else if(super.getNameOfEvent() == "Actathon"){
+            super.setRegistrationFee(80); 
         }
-        else if(super.nameOfEvent == "PlayAway"){
-            super.registrationFee = 100;
+        else if(super.getNameOfEvent() == "PlayAway"){
+            super.setRegistrationFee(100); 
         }
-        if(super.registrationFee != 0){
-            System.out.println(String.format("Thank You %s for your participation. Your registration fee is: %.1f", super.name, super.registrationFee));
+        if(super.getRegistrationFee() != 0){
+            System.out.println(String.format("Thank You %s for your participation. Your registration fee is: %.1f", super.getName(), super.getRegistrationFee()));
             System.out.println("You are Team no: " + this.getTeamNo());
             System.out.println("You are Participant no: " + this.getNoOfParticipants());
         }
