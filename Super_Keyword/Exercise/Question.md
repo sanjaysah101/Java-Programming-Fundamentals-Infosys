@@ -16,7 +16,7 @@ Create a Java Project with the name OverridingAndSuper Implement the class Event
 
 This is the parent class for SingleEventRegistration and TeamEventRegistration classes. It sets the name, name of the event, and registration fee.
 
-<img src="1.pmg">
+<img src="1.png">
 
 ## Methods Description:
 
