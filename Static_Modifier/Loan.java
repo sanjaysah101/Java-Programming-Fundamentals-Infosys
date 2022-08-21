@@ -1,4 +1,4 @@
-package Static_Modifier.Exercise_1;
+package Static_Modifier;
 
 public class Loan {
     private int loanNo;
@@ -61,7 +61,4 @@ public class Loan {
     public static int getLoanCounter(){
         return loanCounter;
     }
-
 }
-
-

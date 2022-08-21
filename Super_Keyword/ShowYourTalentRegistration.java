@@ -1,4 +1,4 @@
-package OverridingAndSuper;
+package Super_Keyword;
 
 class EventRegistration{
     // protected String name;

@@ -1,5 +1,4 @@
-package Static_Modifier.Exercise_1;
-import Static_Modifier.Exercise_1.Loan;
+package Static_Modifier;
 
 public class LoanTester {
     public static void main(String[] args) {
